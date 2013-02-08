@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:id="@+id/tagstore_list_view_id"
+  android:layout_height="match_parent">
+
+  <org.me.tagstore.ui.TagStackUIButtonAdapter
+    android:id="@+id/button_adapter"
+        android:layout_alignParentTop="true"    
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+          
+           
+	<GridView xmlns:android="http://schemas.android.com/apk/res/android"   
+        android:layout_below="@id/button_adapter"	    
+   		android:id="@+id/grid_list_view"
+   		android:layout_width="fill_parent"
+   		android:layout_height="fill_parent"
+   		android:paddingLeft="5dp"
+   		android:paddingRight="5dp"
+    	android:verticalSpacing="5dp"
+    	android:horizontalSpacing="20dp"
+    	android:numColumns="2"
+    	android:columnWidth="60dp"
+    	android:stretchMode="columnWidth"
+    	android:gravity="center_horizontal">
+	</GridView>
+ 
+</RelativeLayout>
